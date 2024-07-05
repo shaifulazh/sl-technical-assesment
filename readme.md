@@ -13,7 +13,7 @@ Start angularjs Frontend
 1. go to angularjs folder 
     cd angularjs
 
-2. make sure node is installed and run npm install
+2. make sure node is installed and run npm install (user node 18 above recommended)
     npm install
 
 3. run express js server to serve html static file 
@@ -25,7 +25,7 @@ Start angular18  Frontend (extra)
 1. go to angularjs folder 
     cd angular18
 
-2. make sure node is installed and run npm install
+2. make sure node is installed and run npm install (use node 18 above)
     npm install
 
 3. run express js server to serve html static file 
