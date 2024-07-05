@@ -1,6 +1,12 @@
 Technical Assesment answer
 
 
+Start Database using composer
+
+1. make sure docker is installed
+2. run this command to boot up posgres db
+    docker-compose up
+
 Start Sprint Boot Rest-API - backend
 
 1. Make sure mvn is installed - use 14.4 mvn version
