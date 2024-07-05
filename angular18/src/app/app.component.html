@@ -1,0 +1,36 @@
+<div class="container">
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Task List</a>
+    </div>
+  </nav>
+  <form #f="ngForm"  (ngSubmit)="onSubmit(f)" >
+  <div class="row g-3">
+    <div class="form-group col">
+      <input [(ngModel)]="task.title" id="name" name="title" type="text" class="form-control" placeholder="Title" aria-label="Title" required >
+    </div>
+    <div class="form-group col" >
+      <input [(ngModel)]="task.description" id="description"  name="description" type="text" class="form-control" placeholder="Details" aria-label="Details" required>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary" >Add</button>
+</form>
+<div *ngIf="task.length > 0">
+  <ul class="list-group" *ngFor="let ta of task">
+  <li class="list-group-item"  >  
+    
+    {{ta.title}} - {{ta.description}} 
+    <div *ngIf="ta.completed">
+    <span class="badge text-bg-success">Completed</span>
+      </div>
+
+  <div class="d-flex justify-content-end">
+
+    <button type="button" class="btn btn-info" (click)="onDone(ta)"  *ngIf="!ta.completed">Mark Complete</button>
+    <button type="button" class="btn btn-danger" (click)="onDelete(ta.id)" >Del</button>
+    
+  </div>
+    </li>
+  </ul>
+</div>
+</div>
