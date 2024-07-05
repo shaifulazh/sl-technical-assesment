@@ -28,5 +28,5 @@ Start angular18  Frontend (extra)
 2. make sure node is installed and run npm install (use node 18 above)
     npm install
 
-3. run express js server to serve html static file 
+3. run ng
     npm run start
